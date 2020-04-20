@@ -10,3 +10,6 @@ Simple client side form validation. Check requird, length, email and password ma
 - checkLength() to check min and max length
 - checkEmail() to validate email with regex
 - checkPasswordsMatch() to match confirm password
+
+# Next step
+Get it to work with a backend eg. firebase, so I can use it in my Bourbon app
