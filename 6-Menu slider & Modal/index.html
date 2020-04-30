@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu slider & Modal</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user" />
+      </div>
+      <ul>
+        <li><a href="#">Forside</a></li>
+        <li><a href="#">Om mig</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"> </i>
+      </button>
+      <h1>En landing Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolorem.
+      </p>
+      <button id="open" class="cta-btn">Sign up</button>
+    </header>
+    <div class="container">
+      <h2>Hvad handler denne side om?</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit dolorem
+        ex, debitis commodi quas dolor autem architecto quam laudantium corporis
+        repudiandae? Molestiae soluta, officiis maxime odio sequi assumenda
+        quaerat qui.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+        voluptates aut dolor eaque consectetur esse aperiam assumenda velit iure
+        repellat.
+      </p>
+      <h2>Jeg vil vide mere</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
+        incidunt laborum explicabo similique, culpa ullam dolorum fuga impedit
+        distinctio voluptatum error molestias illo nihil consectetur architecto
+        quaerat officia voluptate possimus sequi deserunt natus veritatis
+        nostrum porro? Est facilis assumenda maxime?
+      </p>
+      <h2>Fordele</h2>
+      <ul>
+        <li>Fordele</li>
+        <li>Andre fordele</li>
+        <li>Flere fordele</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
+        voluptatem quisquam! Mollitia, repellat corrupti natus voluptates eos
+        nulla expedita, vel dicta at veniam earum similique ad reiciendis.
+        Praesentium, ex error inventore blanditiis esse maiores nihil? Placeat
+        qui iure impedit sit modi libero sequi quis tempora excepturi
+        blanditiis? Aliquid optio id earum autem mollitia. Eligendi delectus
+        totam similique distinctio, maxime quisquam voluptatum atque! Aliquid
+        repudiandae, dignissimos architecto ducimus numquam placeat voluptatum!
+      </p>
+    </div>
+
+    <!-- Modal-->
+    <div id="modal" class="modal-container">
+      <div class="modal">
+        <button id="close" class="close-btn">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Skriv dig op for at modtage tilbud, support og nyheder</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Navn</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Skriv dit navn"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="form-input"
+                placeholder="Skriv din email"
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                placeholder="Vælg et password"
+              />
+            </div>
+            <div>
+              <label for="password2">Gentag Password</label>
+              <input
+                type="password"
+                id="password2"
+                class="form-input"
+                placeholder="Gentag dit password"
+              />
+            </div>
+            <input type="submit" value="Send" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
