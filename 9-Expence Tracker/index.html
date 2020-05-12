@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expence Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Følg dine penge</h2>
+    <div class="container">
+      <h4>Balance</h4>
+      <h1 id="balance">0,00 kr.</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Indkomst</h4>
+          <p id="money-plus" class="money plus">+0,00 kr.</p>
+        </div>
+        <div>
+          <h4>Udgift</h4>
+          <p id="money-minus" class="money minus">-0,00 kr.</p>
+        </div>
+      </div>
+
+      <h3>Historik</h3>
+      <ul id="list" class="list">
+        <!--           <li class="minus">Kontant <span>-400 kr.</span> <button class="delete-btn">X</button></li> -->
+      </ul>
+
+      <h3>Tilføj ny transaktion</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Tekst</label>
+          <input
+            type="text"
+            id="text"
+            placeholder="Beskrivelse. F.eks. bøger"
+          />
+        </div>
+        <div class="form-control">
+          <label for="amount"
+            >Beløb <br />
+            <i>(sæt minus foran udgifter og plus foran indtægter)</i></label
+          >
+          <input type="number" id="amount" placeholder="Indtast beløb..." />
+        </div>
+        <button class="btn">Opdater</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
