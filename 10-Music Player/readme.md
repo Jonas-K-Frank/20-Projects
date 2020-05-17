@@ -10,4 +10,6 @@ Create beautiful UI to play music stored in the "music folder" using the HTML5 a
 - Progress bar
 # whats next
 - find apis with music
-- Make a label for the record to make it look like an LP
+- Make a label for the record to make it look like an LP.
+
+And then
