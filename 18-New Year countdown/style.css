@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("./img/Nytaar.jpg") no-repeat center center/cover;
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+}
+body::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+body * {
+	z-index: 1;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 60px;
+	margin: -80px 0 40px;
+}
+.aar {
+	font-size: 200px;
+	font-weight: 400;
+	z-index: -1;
+	opacity: 0.2;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.nedtaelling {
+	display: none;
+	transform: scale(2);
+}
+
+.tid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 15px;
+}
+
+.tid h2 {
+	margin: 0 0 5px;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 45px;
+	}
+
+	.tid {
+		margin: 5px;
+	}
+	.tid h2 {
+		font-size: 12px;
+		margin: 0;
+	}
+
+	.tid small {
+		font-size: 10px;
+	}
+}
